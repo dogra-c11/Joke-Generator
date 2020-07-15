@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+body {
+  background-color: #ffdfdf;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  display: inline;
+  position: relative;
+  font: 140px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgba(0, 0, 255, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1:after {
+  content: "Jokes";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.jb {
+  background-color: #fff6f6;
+  /* box-shadow: 0px 0px 5px 2px #100303; */
+  border-radius: 5%;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bt1 {
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.bt2 {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.next {
+  margin-top: 30px;
+}
+
+.jk {
+  background-color: #fb929e;
+  font-size: 25px;
+}
+
+.pl {
+  margin-top: 15px;
+  background-color: #fde2e2;
+  font-size: 25px;
 }
